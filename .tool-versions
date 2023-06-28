@@ -1,0 +1,3 @@
+# used by "asdf" to pick the version to use in this project
+erlang 26.0.1
+elixir 1.15.0-otp-26
