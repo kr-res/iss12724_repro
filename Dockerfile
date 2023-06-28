@@ -8,6 +8,9 @@ RUN apt-get update
 ENV MIX_ENV=prod \
   LANG=C.UTF-8
 
+# NOTE: This fixes the #12724 issue
+# ENV ERL_FLAGS="+JMsingle true"
+
 # Create work folder
 RUN mkdir /elixir-prep
 WORKDIR /elixir-prep
